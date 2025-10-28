@@ -134,7 +134,9 @@ function __git.init
   __git.create_abbr gsd        git svn dcommit
   __git.create_abbr gsr        git svn rebase
   __git.create_abbr gsb        git status -sb
+  __git.create_abbr gsdaf      git submodule deinit --all -f
   __git.create_abbr gss        git status -s
+  __git.create_abbr gssr       git submodule sync --recursive
   __git.create_abbr gst        git status
   __git.create_abbr gsta       git stash
   __git.create_abbr gstd       git stash drop
@@ -190,6 +192,7 @@ function __git.init
   __git.create_abbr gwtmv      git worktree move
   __git.create_abbr gwtpr      git worktree prune
   __git.create_abbr gwtrm      git worktree remove
+  __git.create_abbr gwtrmf     git worktree remove --force
   __git.create_abbr gwtulo     git worktree unlock
 
   # GitLab push options
